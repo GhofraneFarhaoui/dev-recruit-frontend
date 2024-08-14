@@ -1,0 +1,84 @@
+{
+  "dev": [
+    {
+      "id": "1",
+      "username": "cheikbaboulak",
+      "firstName": "Cheik",
+      "lastName": "Baboulak",
+      "hourlyRate": 20,
+      "email": "courriel@gmail.com",
+      "phone": "111.111.3569",
+      "skills": [
+        "HTML",
+        "Json",
+        "Android"
+      ],
+      "biographie": "Description...",
+      "disponibilite": "immediate"
+    },
+    {
+      "firstName": "Rayen",
+      "lastName": "Abed",
+      "hourlyRate": "23",
+      "email": "rayenabed87@gmail.com",
+      "phone": "98147682",
+      "skills": [],
+      "bio": "ooo aaa dddd ffff",
+      "availability": "immediate",
+      "id": "6aa8"
+    },
+    {
+      "id": "8a82",
+      "username": "rayen",
+      "password": "ghoff",
+      "profileType": "dev"
+    },
+    {
+      "firstName": "Rayen",
+      "lastName": "Abed",
+      "hourlyRate": "55",
+      "email": "rayenabed87@gmail.com",
+      "phone": "98147682",
+      "bio": "dddddddd",
+      "id": "d667"
+    },
+    {
+      "id": "b277",
+      "username": "gh",
+      "password": "of",
+      "profileType": "dev"
+    }
+  ],
+  "hirer": [
+    {
+      "id": "1",
+      "companyName": "Harry the hirer",
+      "email": "courriel@gmail.com",
+      "phone": "111.111.3569",
+      "businesses": [
+        "Automobile",
+        "Finance"
+      ]
+    },
+    {
+      "id": "bf2c",
+      "username": "ra",
+      "password": "rz",
+      "profileType": "hirer"
+    },
+    {
+      "id": "d41d",
+      "username": "ee",
+      "password": "dd",
+      "profileType": "hirer"
+    }
+  ],
+  "connections": [
+    {
+      "id": "1",
+      "idDev": 1,
+      "idHirer": 1,
+      "status": "accepted"
+    }
+  ]
+}
