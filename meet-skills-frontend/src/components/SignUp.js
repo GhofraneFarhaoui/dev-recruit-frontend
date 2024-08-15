@@ -8,6 +8,7 @@ function SignUp() {
   const [profileType, setProfileType] = useState('dev');
   const navigate = useNavigate();
   const handleSignUp = () => {
+    if (username && password) {
     axios
       .post(`http://localhost:3000/${profileType}`, {
         username,
@@ -16,12 +17,19 @@ function SignUp() {
       })
       .then((response) => {
         console.log(response.data);
-        navigate('/signin');
+        if (response.data.username && response.data.password){
+          navigate('/signin');
+        }
+        
       })
       .catch((error) => {
         console.error(error);
       });
-  };
+  }else{
+    alert('Please fill in the username and password fields');
+  }
+
+};
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
@@ -130,6 +138,7 @@ function SignUp() {
               borderRadius: '5px',
               border: '3px solid #2C415F',
             }}
+            
           />
           <input
             type="password"
@@ -159,9 +168,26 @@ function SignUp() {
             borderRadius: '5px',
             cursor: 'pointer',
             fontSize: '20px',
+            margin : '20ox',
           }}
         >
           Sign Up
+        </button>
+        <button
+          onClick={()=>navigate('/signin')}
+          style={{
+            width: '10%',
+            margin : '20ox',
+            padding: '20px 50px',
+            backgroundColor: '#012150',
+            color: 'white',
+            border: 'none',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            fontSize: '20px',
+          }}
+        >
+          Sign In
         </button>
       </div>
     </div>

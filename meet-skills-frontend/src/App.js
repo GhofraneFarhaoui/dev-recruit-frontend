@@ -5,6 +5,8 @@ import SignIn from './components/SignIn';
 import DeveloperProfile from './components/DeveloperProfile';
 import HirerProfile from './components/HirerProfile';
 import Offers from './components/Offers';
+import DeveloperOrders from './components/DeveloperOrders';
+import HirerOrders from './components/HirerOrders';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/developer/profile" element={<DeveloperProfile />} />
         <Route path="/hirer/profile" element={<HirerProfile />} />
         <Route path="/offers" element={<Offers />} />
+        <Route path="/dev-orders" element={<DeveloperOrders />} />
+        <Route path="/hirer-orders" element={<HirerOrders />} />
       </Routes>
     </Router>
   );

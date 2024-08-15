@@ -26,33 +26,43 @@
       "id": "0c07"
     },
     {
-      "id": "f6c6",
-      "username": "",
-      "password": "",
-      "profileType": "dev"
-    },
-    {
-      "id": "a736",
-      "username": "",
-      "password": "",
-      "profileType": "dev"
-    },
-    {
-      "id": "90a7",
-      "username": "",
-      "password": "",
-      "profileType": "dev"
-    },
-    {
-      "id": "3329",
-      "username": "",
-      "password": "",
-      "profileType": "dev"
-    },
-    {
       "id": "bfdb",
       "username": "rayen",
       "password": "abed",
+      "profileType": "dev"
+    },
+    {
+      "id": "e6e2",
+      "username": "rr",
+      "password": "rr",
+      "profileType": "dev"
+    },
+    {
+      "userName": "rayen",
+      "firstName": "Rayen",
+      "lastName": "Abed",
+      "email": "rayenabed87@gmail.com",
+      "phone": "98147682",
+      "skills": [
+        "HTML",
+        "JS",
+        "CSS",
+        "React"
+      ],
+      "bio": "",
+      "availability": "5_weeks",
+      "id": "9631"
+    },
+    {
+      "id": "d100",
+      "username": "aa",
+      "password": "aa",
+      "profileType": "dev"
+    },
+    {
+      "id": "8bc3",
+      "username": "a",
+      "password": "z",
       "profileType": "dev"
     }
   ],
@@ -68,34 +78,27 @@
       ]
     },
     {
-      "id": "bf2c",
-      "username": "ra",
-      "password": "rz",
-      "profileType": "hirer"
+      "userName": "aa",
+      "companyName": "EPI Digital",
+      "email": "rayenabed87@gmail.com",
+      "phone": "98147682",
+      "businesses": [
+        "Electronic",
+        "Marketing"
+      ],
+      "id": "2798"
     },
     {
-      "id": "d41d",
-      "username": "ee",
-      "password": "dd",
-      "profileType": "hirer"
-    },
-    {
-      "id": "5626",
-      "username": "Ghofrane",
-      "password": "Farhaoui",
-      "profileType": "hirer"
-    },
-    {
-      "id": "b9e1",
-      "username": "",
-      "password": "",
-      "profileType": "hirer"
-    },
-    {
-      "id": "93c6",
-      "username": "",
-      "password": "",
-      "profileType": "hirer"
+      "userName": "z",
+      "companyName": "EPI Digital",
+      "email": "rayenabed87@gmail.com",
+      "phone": "98147682",
+      "businesses": [
+        "Automobile",
+        "Marketing"
+      ],
+      "password": "z",
+      "id": "5a7e"
     }
   ],
   "connections": [

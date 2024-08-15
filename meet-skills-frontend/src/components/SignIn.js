@@ -35,6 +35,7 @@ function SignIn() {
         }
       } else if (hirerUser) {
         if (hirerUser.profileType === 'hirer') {
+          localStorage.setItem('userId', hirerUser.id);
           navigate('/hirer/profile');
         } else {
           console.error('Invalid profile type for hirer');

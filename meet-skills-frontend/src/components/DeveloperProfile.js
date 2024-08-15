@@ -50,6 +50,7 @@ function DeveloperProfile() {
         availability,
       });
       console.log(response.data);
+      alert('Profile updated successfully');
     } catch (error) {
       console.error(error);
     }
