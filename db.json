@@ -17,35 +17,24 @@
       "disponibilite": "immediate"
     },
     {
-      "firstName": "Rayen",
-      "lastName": "Abed",
-      "hourlyRate": "23",
-      "email": "rayenabed87@gmail.com",
-      "phone": "98147682",
-      "skills": [],
-      "bio": "ooo aaa dddd ffff",
-      "availability": "immediate",
-      "id": "6aa8"
+      "username": "ghof",
+      "password": "lbnin",
+      "profileType": "dev",
+      "firstName": "gh",
+      "lastName": "fr",
+      "email": "farhaouighofrane@gmail.com",
+      "id": "0c07"
     },
     {
-      "id": "8a82",
-      "username": "rayen",
-      "password": "ghoff",
+      "id": "f6c6",
+      "username": "",
+      "password": "",
       "profileType": "dev"
     },
     {
-      "firstName": "Rayen",
-      "lastName": "Abed",
-      "hourlyRate": "55",
-      "email": "rayenabed87@gmail.com",
-      "phone": "98147682",
-      "bio": "dddddddd",
-      "id": "d667"
-    },
-    {
-      "id": "b277",
-      "username": "gh",
-      "password": "of",
+      "id": "a736",
+      "username": "",
+      "password": "",
       "profileType": "dev"
     }
   ],
@@ -70,6 +59,18 @@
       "id": "d41d",
       "username": "ee",
       "password": "dd",
+      "profileType": "hirer"
+    },
+    {
+      "id": "5626",
+      "username": "Ghofrane",
+      "password": "Farhaoui",
+      "profileType": "hirer"
+    },
+    {
+      "id": "b9e1",
+      "username": "",
+      "password": "",
       "profileType": "hirer"
     }
   ],
