@@ -28,9 +28,9 @@ function DeveloperProfile() {
           setHourlyRate(user.hourlyRate);
           setEmail(user.email);
           setPhone(user.phone);
-          setSkills(user.skills);
-          setBio(user.biographie);
-          setAvailability(user.disponibilite);
+          setSkills(user.skills || []); 
+          setBio(user.biographie || ''); 
+          setAvailability(user.disponibilite || 'immediate');
         })
         .catch((error) => console.error(error));
     }

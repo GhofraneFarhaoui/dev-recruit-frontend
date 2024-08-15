@@ -36,6 +36,24 @@
       "username": "",
       "password": "",
       "profileType": "dev"
+    },
+    {
+      "id": "90a7",
+      "username": "",
+      "password": "",
+      "profileType": "dev"
+    },
+    {
+      "id": "3329",
+      "username": "",
+      "password": "",
+      "profileType": "dev"
+    },
+    {
+      "id": "bfdb",
+      "username": "rayen",
+      "password": "abed",
+      "profileType": "dev"
     }
   ],
   "hirer": [
@@ -69,6 +87,12 @@
     },
     {
       "id": "b9e1",
+      "username": "",
+      "password": "",
+      "profileType": "hirer"
+    },
+    {
+      "id": "93c6",
       "username": "",
       "password": "",
       "profileType": "hirer"
