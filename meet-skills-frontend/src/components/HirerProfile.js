@@ -77,9 +77,6 @@ function HirerProfile() {
 
   // Styles
   const containerStyle = {
-    maxWidth: '1200px',
-    margin: '0 auto',
-    padding: '20px',
     display: 'flex',
     flexDirection: 'column',
     height: '100vh',
@@ -95,7 +92,7 @@ function HirerProfile() {
 
   const logoStyle = {
     textAlign: 'center',
-    padding: '20px 0',
+    padding: '10px 0',
   };
 
   const navbarStyle = {
@@ -105,12 +102,13 @@ function HirerProfile() {
   };
 
   const navLinkStyle = {
-    margin: '0 20px',
+    margin: '0 10px',
     color: '#fff',
     textDecoration: 'none',
   };
 
   const profileContactContainerStyle = {
+    padding: '10px',
     display: 'flex',
     gap: '20px',
     marginBottom: '30px',
@@ -132,6 +130,7 @@ function HirerProfile() {
 
   const businessSectionStyle = {
     marginBottom: '30px',
+    padding: '10px',
   };
 
   const sectionTitleStyle = {

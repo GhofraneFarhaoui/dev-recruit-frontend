@@ -62,9 +62,6 @@ function DeveloperProfile() {
 
   // Styles
   const containerStyle = {
-    maxWidth: '1200px',
-    margin: '0 auto',
-    padding: '20px',
     display: 'flex',
     flexDirection: 'column',
     height: '100vh',
@@ -122,7 +119,7 @@ function DeveloperProfile() {
       ></h2>
 
       {/* Logo Section */}
-      <div style={{ textAlign: 'center', padding: '20px 0' }}>
+      <div style={{ textAlign: 'center', padding: '10px 0' }}>
         <img src={logo} alt="Logo" style={{ maxWidth: '100px' }} />
       </div>
 

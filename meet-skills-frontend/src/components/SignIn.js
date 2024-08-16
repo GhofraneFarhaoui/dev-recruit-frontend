@@ -52,17 +52,13 @@ function SignIn() {
     <div
       style={{
         display: 'flex',
-        maxWidth: '1200px',
-        margin: '0 auto',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         height: '100vh',
-        padding: '20px',
+        padding: '10px',
         boxSizing: 'border-box',
-        maxWidth: '1200px',
-        margin: '0 auto',
-        marginTop: '-100px',
+        backgroundColor: '#f4f4f4',
       }}
     >
       {/* Header Section */}
@@ -70,13 +66,13 @@ function SignIn() {
         style={{
           backgroundColor: '#012150',
           color: 'white',
-          padding: '15px',
+          padding: '10px',
           textAlign: 'center',
-          margin: '0 0 20px 0',
           width: '100%',
           maxWidth: '600px',
           fontSize: '24px',
           borderRadius: '5px',
+          marginBottom: '20px',
         }}
       >
         Login
@@ -86,7 +82,7 @@ function SignIn() {
       <div
         style={{
           textAlign: 'center',
-          padding: '80px 0',
+          padding: '50px 0',
         }}
       >
         <img src={logo} alt="Logo" style={{ maxWidth: '120px' }} />
@@ -101,6 +97,7 @@ function SignIn() {
           gap: '15px',
           maxWidth: '600px',
           width: '100%',
+          marginBottom: '20px', // Space between input fields and button
         }}
       >
         <input
@@ -137,9 +134,8 @@ function SignIn() {
       <div
         style={{
           textAlign: 'center',
-          padding: '20px',
-          maxWidth: '600px',
           width: '100%',
+          maxWidth: '600px',
         }}
       >
         <button
