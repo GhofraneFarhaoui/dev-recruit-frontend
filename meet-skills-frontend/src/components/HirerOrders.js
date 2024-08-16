@@ -9,7 +9,9 @@ function HirerOrders() {
       try {
         const userId = localStorage.getItem('userId');
         if (userId) {
-          const response = await axios.get(`http://localhost:3000/hirer-orders/${userId}`);
+          const response = await axios.get(
+            `http://localhost:3000/hirer-orders/${userId}`
+          );
           setOrders(response.data);
         } else {
           console.error('User ID not found in localStorage');
@@ -36,7 +38,7 @@ function HirerOrders() {
           </tr>
         </thead>
         <tbody>
-          {orders.map(order => (
+          {orders.map((order) => (
             <tr key={order.id}>
               <td>{order.id}</td>
               <td>{order.developerName}</td>

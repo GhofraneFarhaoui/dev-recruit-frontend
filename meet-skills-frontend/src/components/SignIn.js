@@ -49,7 +49,22 @@ function SignIn() {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+    <div
+      style={{
+        display: 'flex',
+        maxWidth: '1200px',
+        margin: '0 auto',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        padding: '20px',
+        boxSizing: 'border-box',
+        maxWidth: '1200px',
+        margin: '0 auto',
+        marginTop: '-100px',
+      }}
+    >
       {/* Header Section */}
       <h2
         style={{
@@ -57,75 +72,87 @@ function SignIn() {
           color: 'white',
           padding: '15px',
           textAlign: 'center',
-          margin: 0,
+          margin: '0 0 20px 0',
+          width: '100%',
+          maxWidth: '600px',
+          fontSize: '24px',
+          borderRadius: '5px',
         }}
       >
         Login
       </h2>
 
       {/* Logo Section */}
-      <div style={{ textAlign: 'center', padding: '20px 0' }}>
-        <img src={logo} alt="Logo" style={{ maxWidth: '150px' }} />
+      <div
+        style={{
+          textAlign: 'center',
+          padding: '80px 0',
+        }}
+      >
+        <img src={logo} alt="Logo" style={{ maxWidth: '120px' }} />
       </div>
 
       {/* Input Fields */}
       <div
         style={{
-          flex: 0.58,
           display: 'flex',
-          justifyContent: 'center',
+          flexDirection: 'column',
           alignItems: 'center',
+          gap: '15px',
+          maxWidth: '600px',
+          width: '100%',
         }}
       >
-        <div
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
           style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: '15px',
+            width: '100%',
+            maxWidth: '400px',
+            padding: '15px',
+            borderRadius: '5px',
+            border: '3px solid #2C415F',
+            fontSize: '16px',
           }}
-        >
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            style={{
-              width: '250%',
-              padding: '15px',
-              marginBottom: '15px',
-              borderRadius: '5px',
-              border: '3px solid #2C415F',
-            }}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            style={{
-              width: '250%',
-              padding: '15px',
-              borderRadius: '5px',
-              border: '3px solid #2C415F',
-            }}
-          />
-        </div>
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          style={{
+            width: '100%',
+            maxWidth: '400px',
+            padding: '15px',
+            borderRadius: '5px',
+            border: '3px solid #2C415F',
+            fontSize: '16px',
+          }}
+        />
       </div>
 
       {/* Sign In Button */}
-      <div style={{ textAlign: 'center', padding: '50px' }}>
+      <div
+        style={{
+          textAlign: 'center',
+          padding: '20px',
+          maxWidth: '600px',
+          width: '100%',
+        }}
+      >
         <button
           onClick={handleSignIn}
           style={{
-            width: '10%',
-            padding: '20px 50px',
+            width: '150px',
+            padding: '15px',
             backgroundColor: '#012150',
             color: 'white',
             border: 'none',
             borderRadius: '5px',
             cursor: 'pointer',
-            fontSize: '20px',
+            fontSize: '16px',
           }}
         >
           Valider

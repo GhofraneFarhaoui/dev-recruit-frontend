@@ -26,44 +26,19 @@
       "id": "0c07"
     },
     {
-      "id": "bfdb",
-      "username": "rayen",
-      "password": "abed",
-      "profileType": "dev"
-    },
-    {
-      "id": "e6e2",
-      "username": "rr",
-      "password": "rr",
-      "profileType": "dev"
-    },
-    {
       "userName": "rayen",
       "firstName": "Rayen",
       "lastName": "Abed",
       "email": "rayenabed87@gmail.com",
       "phone": "98147682",
       "skills": [
-        "HTML",
-        "JS",
-        "CSS",
         "React"
       ],
-      "bio": "",
-      "availability": "5_weeks",
-      "id": "9631"
-    },
-    {
-      "id": "d100",
-      "username": "aa",
-      "password": "aa",
-      "profileType": "dev"
-    },
-    {
-      "id": "8bc3",
-      "username": "a",
-      "password": "z",
-      "profileType": "dev"
+      "bio": "Description",
+      "availability": "immediate",
+      "profileType": "dev",
+      "password": "rayen123",
+      "id": "d29b"
     }
   ],
   "hirer": [
@@ -78,27 +53,22 @@
       ]
     },
     {
-      "userName": "aa",
+      "id": "58a5",
+      "username": "zz",
+      "password": "zz",
+      "profileType": "hirer"
+    },
+    {
       "companyName": "EPI Digital",
       "email": "rayenabed87@gmail.com",
       "phone": "98147682",
       "businesses": [
         "Electronic",
-        "Marketing"
+        "Insurance"
       ],
-      "id": "2798"
-    },
-    {
-      "userName": "z",
-      "companyName": "EPI Digital",
-      "email": "rayenabed87@gmail.com",
-      "phone": "98147682",
-      "businesses": [
-        "Automobile",
-        "Marketing"
-      ],
-      "password": "z",
-      "id": "5a7e"
+      "password": "hirer123",
+      "profileType": "hirer",
+      "id": "be22"
     }
   ],
   "connections": [
