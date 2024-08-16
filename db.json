@@ -17,12 +17,12 @@
       "disponibilite": "immediate"
     },
     {
-      "username": "ghof",
-      "password": "lbnin",
-      "profileType": "dev",
       "firstName": "gh",
       "lastName": "fr",
       "email": "farhaouighofrane@gmail.com",
+      "skills": [],
+      "bio": "",
+      "availability": "immediate",
       "id": "0c07"
     },
     {
@@ -64,6 +64,29 @@
       "username": "a",
       "password": "z",
       "profileType": "dev"
+    },
+    {
+      "firstName": "gh",
+      "lastName": "fr",
+      "email": "farhaouighofrane@gmail.com",
+      "skills": [
+        "React"
+      ],
+      "bio": "dlkqsd",
+      "availability": "immediate",
+      "id": "4193"
+    },
+    {
+      "id": "6c91",
+      "username": "Ghofrane",
+      "password": "Farhaoui",
+      "profileType": "dev"
+    },
+    {
+      "id": "1fb2",
+      "username": "Syrine",
+      "password": "123456",
+      "profileType": "dev"
     }
   ],
   "hirer": [
@@ -99,6 +122,18 @@
       ],
       "password": "z",
       "id": "5a7e"
+    },
+    {
+      "id": "d1d1",
+      "username": "Ghofff",
+      "password": "789456",
+      "profileType": "hirer"
+    },
+    {
+      "id": "e15a",
+      "username": "Fayza",
+      "password": "789456",
+      "profileType": "hirer"
     }
   ],
   "connections": [

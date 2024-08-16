@@ -28,8 +28,8 @@ function DeveloperProfile() {
           setHourlyRate(user.hourlyRate);
           setEmail(user.email);
           setPhone(user.phone);
-          setSkills(user.skills || []); 
-          setBio(user.biographie || ''); 
+          setSkills(user.skills || []);
+          setBio(user.biographie || '');
           setAvailability(user.disponibilite || 'immediate');
         })
         .catch((error) => console.error(error));
@@ -56,8 +56,56 @@ function DeveloperProfile() {
     }
   };
 
+  // Styles
+  const containerStyle = {
+    maxWidth: '1200px',
+    margin: '0 auto',
+    padding: '20px',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100vh',
+  };
+
+  const sectionTitleStyle = {
+    color: '#012150',
+    marginBottom: '10px',
+  };
+
+  const separatorStyle = {
+    borderBottom: '2px solid #012150',
+    marginBottom: '20px',
+  };
+
+  const profileSectionStyle = {
+    display: 'flex',
+    gap: '20px',
+    alignItems: 'flex-start',
+    marginBottom: '30px',
+    maxWidth: '100%',
+    margin: '0 auto',
+  };
+
+  const skillsBioSectionStyle = {
+    maxWidth: '100%',
+    margin: '0 auto',
+  };
+
+  const inputStyle = {
+    width: '50%',
+    padding: '10px',
+    borderRadius: '5px',
+    border: '2px solid #012150',
+    marginBottom: '10px',
+  };
+
+  const flexContainerStyle = {
+    display: 'flex',
+    gap: '20px',
+    marginBottom: '30px',
+  };
+
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+    <div style={containerStyle}>
       {/* Header Section */}
       <h2
         style={{
@@ -91,33 +139,22 @@ function DeveloperProfile() {
           </a>
         </div>
         <div style={{ margin: '0 20px' }}>
-          <a href="/orders" style={{ textDecoration: 'none', color: '#ffff' }}>
+          <a
+            href="/dev-orders"
+            style={{ textDecoration: 'none', color: '#ffff' }}
+          >
             Orders
           </a>
         </div>
       </div>
 
       {/* Main Content */}
-      <div
-        style={{
-          padding: '20px',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '20px',
-        }}
-      >
+      <div style={{ padding: '20px' }}>
         {/* Profile Section */}
-        <div
-          style={{
-            display: 'flex',
-            gap: '20px',
-            alignItems: 'flex-start',
-            marginBottom: '30px',
-          }}
-        >
-          {/* Profile Title */}
+        <div style={profileSectionStyle}>
           <div style={{ flex: '3' }}>
-            <h3 style={{ marginBottom: '10px', color: '#012150' }}>PROFILE</h3>
+            <h3 style={sectionTitleStyle}>PROFILE</h3>
+            <div style={separatorStyle}></div>
             <div style={{ display: 'flex', gap: '20px' }}>
               <div style={{ flex: '1' }}>
                 <img
@@ -139,36 +176,21 @@ function DeveloperProfile() {
                   placeholder="First Name"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
-                  style={{
-                    width: '50%',
-                    padding: '10px',
-                    borderRadius: '5px',
-                    border: '1px solid #ccc',
-                  }}
+                  style={inputStyle}
                 />
                 <input
                   type="text"
                   placeholder="User Name"
                   value={userName}
                   onChange={(e) => setUserName(e.target.value)}
-                  style={{
-                    width: '50%',
-                    padding: '10px',
-                    borderRadius: '5px',
-                    border: '1px solid #ccc',
-                  }}
+                  style={inputStyle}
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
-                  style={{
-                    width: '50%',
-                    padding: '10px',
-                    borderRadius: '5px',
-                    border: '1px solid #ccc',
-                  }}
+                  style={inputStyle}
                 />
               </div>
             </div>
@@ -176,7 +198,8 @@ function DeveloperProfile() {
 
           {/* Contact Section */}
           <div style={{ flex: '2' }}>
-            <h3 style={{ marginBottom: '10px', color: '#012150' }}>CONTACT</h3>
+            <h3 style={sectionTitleStyle}>CONTACT</h3>
+            <div style={separatorStyle}></div>
             <div
               style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}
             >
@@ -185,37 +208,39 @@ function DeveloperProfile() {
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                style={{
-                  width: '50%',
-                  padding: '10px',
-                  borderRadius: '5px',
-                  border: '1px solid #ccc',
-                }}
+                style={inputStyle}
               />
               <input
                 type="text"
                 placeholder="Phone"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                style={{
-                  width: '50%',
-                  padding: '10px',
-                  borderRadius: '5px',
-                  border: '1px solid #ccc',
-                }}
+                style={inputStyle}
               />
             </div>
           </div>
         </div>
-
         {/* Skills Section */}
-        <div>
-          <h3 style={{ marginBottom: '10px', color: '#012150' }}>SKILLS</h3>
-          <div style={{ display: 'flex', gap: '20px' }}>
+        <div style={{ ...skillsBioSectionStyle, marginBottom: '30px' }}>
+          <h3 style={sectionTitleStyle}>SKILLS</h3>
+          <div style={separatorStyle}></div>
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '10px',
+              marginTop: '10px',
+            }}
+          >
             {['HTML', 'CSS', 'JS', 'React'].map((skill) => (
               <label
                 key={skill}
-                style={{ display: 'flex', alignItems: 'center', gap: '10px' }}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px',
+                  cursor: 'pointer',
+                }}
               >
                 <input
                   type="radio"
@@ -226,7 +251,7 @@ function DeveloperProfile() {
                     const selectedSkill = e.target.value;
                     setSkills((prev) =>
                       prev.includes(selectedSkill)
-                        ? prev.filter((skill) => skill !== selectedSkill)
+                        ? prev.filter((s) => s !== selectedSkill)
                         : [...prev, selectedSkill]
                     );
                   }}
@@ -237,61 +262,45 @@ function DeveloperProfile() {
             ))}
           </div>
         </div>
-        {/* Biography and Availability Section */}
-        <div style={{ marginBottom: '30px' }}>
-          <h3 style={{ marginBottom: '10px', color: '#012150' }}>BIOGRAPHIE</h3>
-          <div style={{ display: 'flex', gap: '20px' }}>
-            {/* Biography Section */}
-            <div style={{ flex: '1' }}>
-              <textarea
-                placeholder="Biography"
-                value={bio}
-                onChange={(e) => setBio(e.target.value)}
-                style={{
-                  width: '50%',
-                  padding: '10px',
-                  borderRadius: '5px',
-                  border: '1px solid #ccc',
-                  height: '150px',
-                }}
-              />
-            </div>
-            {/* Availability Section */}
-            <div
+        {/* Biography Section */}
+        <div style={flexContainerStyle}>
+          <div style={{ flex: '2' }}>
+            <h3 style={sectionTitleStyle}>BIOGRAPHIE</h3>
+            <div style={separatorStyle}></div>
+            <textarea
+              placeholder="Biography"
+              value={bio}
+              onChange={(e) => setBio(e.target.value)}
               style={{
-                flex: '1',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'flex-start',
-                paddingTop: '0.5px',
+                width: '70%',
+                padding: '10px',
+                borderRadius: '5px',
+                border: '2px solid #012150',
+                height: '150px',
+              }}
+            />
+          </div>
+
+          {/* Availability Section */}
+          <div style={{ flex: '1' }}>
+            <h3 style={sectionTitleStyle}>DISPONIBILITE</h3>
+            <div style={separatorStyle}></div>
+            <select
+              value={availability}
+              onChange={(e) => setAvailability(e.target.value)}
+              style={{
+                width: '50%',
+                padding: '10px',
+                borderRadius: '5px',
+                border: '2px solid #012150',
+                height: '40px',
+                fontSize: '16px',
               }}
             >
-              <label
-                style={{
-                  marginBottom: '10px',
-                  color: '#012150',
-                  fontWeight: 'bold',
-                }}
-              >
-                DISPONIBILITE:
-              </label>
-              <select
-                value={availability}
-                onChange={(e) => setAvailability(e.target.value)}
-                style={{
-                  width: '50%',
-                  padding: '10px',
-                  borderRadius: '5px',
-                  border: '1px solid #ccc',
-                  height: '40px',
-                  fontSize: '20px',
-                }}
-              >
-                <option value="immediate">Immediate</option>
-                <option value="2_weeks">2 weeks</option>
-                <option value="5_weeks">5 weeks</option>
-              </select>
-            </div>
+              <option value="immediate">Immediate</option>
+              <option value="2_weeks">2 weeks</option>
+              <option value="5_weeks">5 weeks</option>
+            </select>
           </div>
         </div>
       </div>
@@ -307,6 +316,7 @@ function DeveloperProfile() {
             border: 'none',
             borderRadius: '5px',
             cursor: 'pointer',
+            fontSize: '16px',
           }}
         >
           Update Profile
